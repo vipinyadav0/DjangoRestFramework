@@ -9,9 +9,10 @@ from rest_framework import routers
 
 routers = routers.DefaultRouter()
 routers.register(r'students', views.StudentsViewSet)
-urlpatterns = routers.urls
+
 
 urlpatterns = [
+    path('', include(routers.urls)),
     # path('', views.students, name ='students'),
     path('lists/', views.model_student, name ='list_students'),
     path('lists/<int:pk>/', views.student_detail, name ='list_students'),
