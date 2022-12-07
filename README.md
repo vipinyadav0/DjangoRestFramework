@@ -1,2 +1,2 @@
 # DjangoRestFramework
-# Learning Django ResyFramework
+# Learning Django Rest-Framework
